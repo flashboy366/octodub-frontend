@@ -1,11 +1,11 @@
 import { ChakraProvider } from "@chakra-ui/react"
-import SignIn from "./pages/SignIn/SignIn"
 import { theme } from "./theme"
+import VerifyCode from "./pages/VerifyCode"
 
 const App = () => {
   return (
     <ChakraProvider theme={theme}>
-      <SignIn />
+      <VerifyCode />
     </ChakraProvider>
   )
 }
