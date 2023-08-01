@@ -1,9 +1,10 @@
 import { ChakraProvider } from "@chakra-ui/react"
 import SignIn from "./pages/SignIn/SignIn"
+import { theme } from "./theme"
 
 const App = () => {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <SignIn />
     </ChakraProvider>
   )
