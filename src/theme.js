@@ -40,12 +40,18 @@ export const theme = extendTheme({
             variants: {
                 'action': {
                     bg: "brand.100",
-                    width: "160px",
                     _hover: {bg: 'brand.200'},
                     _active: {bg: 'brand.300'},
                     color: "white.100",
                 }
             }
-        }
+        },
+    },
+    styles: {
+        global: () => ({
+            body: {
+                bg: "background.100"
+            }
+        })
     }
 })

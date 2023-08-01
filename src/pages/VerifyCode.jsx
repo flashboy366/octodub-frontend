@@ -1,23 +1,23 @@
-import { Button } from "@chakra-ui/button"
+import { Button, IconButton } from "@chakra-ui/button"
 import { Card, CardBody, CardHeader } from "@chakra-ui/card"
 import { HStack, Heading, Text, VStack } from "@chakra-ui/layout"
-import { Image } from "@chakra-ui/image"
 import AuthenticationWrapper from "../components/AuthenticationWrapper"
 import { PinInput, PinInputField } from "@chakra-ui/pin-input"
+import { ArrowBackIcon, ArrowForwardIcon } from "@chakra-ui/icons"
 
 const VerifyCode = () => {
     return (
         <AuthenticationWrapper>
             <Card width="452px" alignItems="center">
-                <Button
+                <IconButton
                     colorScheme="white"
                     transform="auto"
                     position="absolute"
                     translateX="-200px"
                     translateY="7px"
-                >
-                    <Image src="arrow-left.svg" />
-                </Button>
+                    color="black.100"
+                    icon={<ArrowBackIcon boxSize={4} />}
+                />
                 <CardHeader>
                     <Heading fontFamily="jakarta" fontSize="24px" fontWeight="600">
                         Enter the code
@@ -57,13 +57,11 @@ const VerifyCode = () => {
                         </VStack>
                         <Button
                             variant="action"
-
-                            display="flex"
-                            justifyContent="space-around"
                             fontFamily="jakarta"
+                            rightIcon={<ArrowForwardIcon boxSize={4} />}
+                            width="160px"
                         >
                             Continue
-                            <Image src="arrow-right.svg" />
                         </Button>
                     </VStack>
                 </CardBody>

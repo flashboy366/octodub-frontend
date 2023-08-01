@@ -4,6 +4,7 @@ import { Image } from "@chakra-ui/image"
 import { Input } from "@chakra-ui/input"
 import { Box, Divider, Heading, Text, VStack } from "@chakra-ui/layout"
 import AuthenticationWrapper from "../components/AuthenticationWrapper"
+import { ArrowForwardIcon } from "@chakra-ui/icons"
 
 const SignIn = () => {
     return (
@@ -49,13 +50,11 @@ const SignIn = () => {
                         />
                         <Button
                             variant="action"
-
-                            display="flex"
-                            justifyContent="space-around"
                             fontFamily="jakarta"
+                            rightIcon={<ArrowForwardIcon boxSize={4} />}
+                            width="160px"
                         >
                             Continue
-                            <Image src="arrow-right.svg" />
                         </Button>
                         <Button
                             colorScheme="white"
