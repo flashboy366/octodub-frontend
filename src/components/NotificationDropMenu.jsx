@@ -23,7 +23,7 @@ const NotificationDropMenu = () => {
                         top='11px'
                         bgColor='accent.100'
                         borderRadius='20px'
-                        zIndex={9999}
+                        zIndex={1}
                         p='1px'
                     />
                 </>}
@@ -38,7 +38,7 @@ const NotificationDropMenu = () => {
                 borderTopRadius={0}
                 borderBottomRadius="30px"
                 position="relative"
-                top="4px"
+                top="2px"
                 paddingBottom="30px"
             >
                 <NotificationItem

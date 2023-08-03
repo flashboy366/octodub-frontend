@@ -9,8 +9,10 @@ const PageWrapper = ({children}) => {
             display="flex"
             justifyContent="center"
         >
-            <VStack maxWidth="1277px" width="100%" height="90vh">
-                <Header />
+            <VStack maxWidth="1277px" width="100%" height="90vh" gap="10px">
+                <Box width="100%">
+                    <Header />
+                </Box>
                 {children}
             </VStack>
         </Box>

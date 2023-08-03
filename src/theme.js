@@ -14,6 +14,7 @@ export const theme = extendTheme({
             100: '#D1D1D1',
             200: '#D3D3D3',
             300: '#55534E',
+            400: '#FCFCFC',
         },
         background: {
             100: '#E2E6EF',
@@ -30,6 +31,16 @@ export const theme = extendTheme({
         mukta: `'Mukta', sans-serif`,
         raleway: `'Raleway', sans-serif`,
     },
+    styles: {
+        global: {
+            option: {
+                background: "white",
+            },
+            body: {
+                bg: "background.100"
+            },
+        },
+    },
     components: {
         Button: {
             sizes: {
@@ -43,15 +54,25 @@ export const theme = extendTheme({
                     _hover: {bg: 'brand.200'},
                     _active: {bg: 'brand.300'},
                     color: "white.100",
+                    borderRadius: "11px",
                 }
             }
         },
+        Select: {
+            baseStyle: {
+                field: {
+                    borderRadius: "11px",
+                    fontSize: '13px',
+                    color: 'gray.300',
+                },
+                icon: {
+                    boxSize: 4,
+                    color: 'gray.300',
+                },
+            },
+            defaultProps: {
+                size: "sm",
+            },
+        },
     },
-    styles: {
-        global: () => ({
-            body: {
-                bg: "background.100"
-            }
-        })
-    }
 })
